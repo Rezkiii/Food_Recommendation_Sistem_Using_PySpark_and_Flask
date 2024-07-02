@@ -1,0 +1,62 @@
+/* add_food.html CSS */
+
+/* Overall form styling */
+form {
+  display: flex; /* Arrange form elements vertically */
+  flex-direction: column; /* Stack elements on top of each other */
+  width: 500px;
+  margin: 0 auto; /* Center the form horizontally */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px; /* Add gentle rounded corners */
+}
+
+/* Label styling */
+label {
+  margin-bottom: 5px;
+  font-weight: bold; /* Make labels stand out */
+}
+
+/* Input and textarea styling */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px; /* Match submit button style */
+  margin-bottom: 15px; /* Add spacing between form elements */
+}
+
+textarea {
+  resize: vertical; /* Allow users to resize the textarea */
+}
+
+/* Submit button styling */
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Flash message styling */
+.flash-message {
+  padding: 10px 20px;
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.success {
+  background-color: #dff0d8;
+  color: #3c763d;
+}
+
+.error {
+  background-color: #f2dede;
+  color: #a94442;
+}
+

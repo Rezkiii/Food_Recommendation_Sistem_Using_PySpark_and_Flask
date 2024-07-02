@@ -1,0 +1,108 @@
+/* Overall page styling */
+body {
+  font-family: sans-serif; /* Use a clean, modern font */
+  margin: 0; /* Remove default margins for better control */
+  padding: 20px; /* Add some padding for visual balance */
+}
+
+/* Header styling */
+header {
+  display: flex; /* Arrange elements horizontally */
+  justify-content: space-between; /* Align items at opposite ends */
+  align-items: center; /* Align vertically */
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd; /* Add a subtle separator line */
+}
+
+h1 {
+  font-size: 2em; /* Set a larger font size for the title */
+  margin: 0; /* Remove default margin for better control */
+}
+
+/* Search bar styling */
+form {
+  display: flex;
+  width: 100%; /* Make the form span the full width */
+  margin-top:20px;
+  margin-bottom: 20px; /* Add spacing after the search bar */
+}
+
+input[type="text"] {
+  flex: 1; /* Expand the search field to fill available space */
+  padding: 10px; /* Increase padding for better readability */
+  border: 1px solid #ccc;
+  border-radius: 4px; /* Use a slightly larger corner radius */
+}
+
+button[type="submit"] {
+  padding: 10px 20px; /* Increase padding for better button size */
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px; /* Match corner radius of search field */
+}
+
+/* Link styling */
+a {
+  color: #333; /* Maintain link color */
+  text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+  color: #007bff; /* Update hover color */
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0; /* Remove default margin, already spaced with form */
+}
+
+th, td {
+  text-align: left;
+  padding: 15px; /* Increase padding for better spacing */
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2; /* Add a light background for headers */
+}
+
+/* Responsive considerations (optional) */
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens, e.g., make search bar vertical */
+  form {
+    flex-direction: column;
+  }
+
+  input[type="text"], button[type="submit"] {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* ... (Other CSS styles) ... */
+
+/* "Tambah Makanan" button styling (using <button> element) */
+.add-food-btn {
+  display: inline-block; /* Make it behave as a block element */
+  padding: 10px 20px; /* Increase padding for better button size */
+  background-color: #007bff; /* Use a vibrant blue color */
+  color: white; /* Ensure text is legible */
+  border: none; /* Remove default border */
+  cursor: pointer; /* Indicate interactivity */
+  border-radius: 4px; /* Use a slightly larger corner radius */
+  text-decoration: none; /* Remove underline */
+  margin-bottom:15px;
+  font-size: 16px; /* Adjust font size for better readability */
+  font-weight: bold; /* Emphasize the button text */
+  transition: background-color 0.3s ease; /* Add a subtle hover effect */
+  margin-top: 20px; /* Add some spacing above the button */
+}
+
+.add-food-btn:hover { /* Hover state */
+  background-color: #0056b3; /* Darken the color on hover */
+}
+

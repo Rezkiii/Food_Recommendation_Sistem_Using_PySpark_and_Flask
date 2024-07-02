@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Daftar Makanan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <h1>Daftar Makanan</h1>
+    <form method="POST">
+        <input type="text" name="search_query" placeholder="Search food name">
+        <button type="submit">Search</button>
+    </form>
+    
+   <button type="button" class="add-food-btn" onclick="window.location.href='{{ url_for('add_food') }}'">Tambah Makanan</button>
+
+    
+    <table>
+        <tr>
+            <th>No</th>
+            <th>Menu</th>
+            <th>Kategori</th>
+            <th>type</th>
+           
+        </tr>
+        {% for item in food_data %}
+        <tr>
+            <td>{{ item.Food_ID }}</td>
+            <td><a href="{{ url_for('food_details', food_id=item.Food_ID) }}">{{ item.Name }}</a></td>  <td>{{ item.C_Type }}</td>
+            <td>{{ item.Veg_Non }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    </body>
+</html>
+

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Food Details</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='food_details.css') }}">
+</head>
+<body>
+  <div class="container">  <h1>Detail Makanan</h1>
+    <div class="food-details">  <p>Name: {{ food_details.Name }}</p>
+      <p>Description: {{ food_details.Describe }}</p>
+    </div>
+    <h2>Makanan yang Mungkin Anda Suka :</h2>
+    <ul class="recommended-foods">  {% for item in recommended_foods %}
+      <li>
+        <a href="{{ url_for('food_details', food_id=item.Food_ID) }}">{{ item.Name }}</a> ({{ item.Describe }})
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</body>
+</html>
+

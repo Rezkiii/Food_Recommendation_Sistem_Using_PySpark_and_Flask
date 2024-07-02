@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tambah Makanan</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='add_food.css') }}">
+</head>
+<body>
+  <h1>Tambah Makanan Baru</h1>
+
+  <form method="POST">
+    <div class="form-group">
+      <label for="name">Nama Makanan:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="category">Kategori:</label>
+      <input type="text" id="category" name="category" required>
+    </div>
+
+    <div class="form-group">
+      <label for="veg_non">Vegetarian/Non-vegetarian:</label>
+      <select id="veg_non" name="veg_non" required>
+        <option value="Vegetarian">Vegetarian</option>
+        <option value="Non-vegetarian">Non-vegetarian</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="describe">Deskripsi:</label>
+      <textarea id="describe" name="describe" rows="5" required></textarea>
+    </div>
+
+    <button type="submit">Tambah Makanan</button>
+  </form>
+
+  {% if get_flashed_messages('success') %}
+    <div class="flash-message success">
+      {{ get_flashed_messages('success') }}
+    </div>
+  {% endif %}
+
+  {% if get_flashed_messages('error') %}
+    <div class="flash-message error">
+      {{ get_flashed_messages('error') }}
+    </div>
+  {% endif %}
+</body>
+</html>
+

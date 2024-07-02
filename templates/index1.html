@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Data Makanan</title>
+    </head>
+<body>
+    <h1>Data Makanan</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>ID Makanan</th>
+                <th>Nama</th>
+                <th>Jenis Masakan</th>
+                <th>Vegetarian/Non-Vegetarian</th>
+                <th>Deskripsi</th>
+                </tr>
+        </thead>
+        <tbody>
+            {% for food in data_makanan %}
+            <tr>
+                <td>{{ food.Food_ID }}</td>
+                <td>{{ food.Nama }}</td>
+                <td>{{ food.Jenis_Masakan }}</td>
+                <td>{{ food.Vegetarian_Non_Vegetarian }}</td>
+                <td>{{ food.Deskripsi }}</td>
+                {% if ratings_data %}
+                <td>{{ ratings_data[food.Food_ID].Rating }}</td>
+                {% endif %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    </body>
+</html>
+S

@@ -1,0 +1,81 @@
+/* food_details.html CSS */
+
+/* Overall page styling */
+body {
+  font-family: sans-serif; /* Use a clean, modern font */
+  margin: 0; /* Remove default margins for better control */
+  padding: 20px; /* Add some padding for visual balance */
+  background-color: #f8f9fa; /* Optional: Light background */
+}
+
+/* Header styling */
+header {
+  background-color: #fff; /* White header background */
+  padding: 15px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h1 {
+  font-size: 2.5em; /* Larger title font size */
+  margin: 0; /* Remove default margin for better control */
+  padding: 10px 0; /* Add some spacing below the title */
+  text-align: center; /* Center the title */
+}
+
+/* Container styling */
+.container {
+  max-width: 900px; /* Adjust maximum width as needed */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add some padding within the container */
+}
+
+/* Food details section */
+.food-details {
+  display: flex; /* Arrange food image and text side-by-side */
+  align-items: flex-start; /* Align vertically */
+  margin-bottom: 20px; /* Add spacing after details section */
+}
+
+.food-details img {
+  width: 300px; /* Adjust image width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Add spacing between image and text */
+  border: 1px solid #ddd; /* Optional: Add a subtle border */
+  border-radius: 4px; /* Add a slight corner radius */
+}
+
+.food-name {
+  font-size: 1.8em; /* Larger font size for food name */
+  font-weight: bold; /* Emphasize the food name */
+  margin-bottom: 10px; /* Add some spacing below the name */
+}
+
+.food-description {
+  line-height: 1.6; /* Adjust line height for better readability */
+}
+
+/* Recommended food list styling */
+.recommended-foods {
+  list-style: none; /* Remove bullet points */
+  padding: 0;
+  margin: 0;
+}
+
+.recommended-foods li {
+  display: flex; /* Arrange items horizontally */
+  justify-content: space-between; /* Space items evenly */
+  align-items: center; /* Align vertically */
+  margin-bottom: 10px; /* Add spacing between list items */
+  border-bottom: 1px solid #eee; /* Add a subtle separator line */
+  padding: 10px 0; /* Add some padding within each list item */
+}
+
+.recommended-foods a {
+  color: #333; /* Text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.recommended-foods a:hover {
+  color: #007bff; /* Change color on hover */
+}
+
